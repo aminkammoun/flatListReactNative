@@ -1,23 +1,16 @@
-import React from 'react'
-import {
-    StatusBar,
-    FlatList,
-    Image,
-    Animated,
-    Text,
-    View,
-    Dimensions,
-    StyleSheet,
-    TouchableOpacity,
-    Easing,
-    SafeAreaViewBase,
-    SafeAreaView,
-  } from "react-native";
+import React from "react";
+import { Header } from "react-native-elements";
 
-export default function Header() {
-    return (
-        <div>
-            
-        </div>
-    )
+export default function HeaderMain() {
+  return (
+    <Header
+      backgroundColor="red"
+      leftComponent={{ icon: "menu", color: "#fff", size: 30 }}
+      centerComponent={{
+        text: "FlatList",
+        style: { fontSize: 23, color: "#fff" },
+      }}
+      rightComponent={{ icon: "home", color: "#fff", size: 30 }}
+    />
+  );
 }
