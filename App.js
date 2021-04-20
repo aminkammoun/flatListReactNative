@@ -18,12 +18,12 @@ const { height, width } = Dimensions.get("screen");
 
 var Data = [...Array(30).keys()].map((_, i) => {
   return {
-    id: faker.random.uuid(),
+    id: faker.datatype.uuid(),
     name: faker.name.findName(),
     image: `https://randomuser.me/portraits/${faker.helpers.randomize([
       "men",
       "women",
-    ])}/${faker.random.number(50)}.jpg`,
+    ])}/${faker.datatype.number(50)}.jpg`,
     jobTitle: faker.name.jobTitle().slice(0, 10),
     email: faker.internet.email(),
   };
